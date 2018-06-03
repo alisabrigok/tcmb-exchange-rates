@@ -33,7 +33,21 @@ describe('using the tcmb function', function () {
     });
 
     it('should get an error with the error code of 700', function (done) {
+        tcmb('DEM', 555).then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 700);
+            done();
+        });
+    });
+
+    it('should get an error with the error code of 700', function (done) {
         tcmb('DEM', '09-08-3000').then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 700);
+            done();
+        });
+    });
+
+    it('should get an error with the error code of 700', function (done) {
+        tcmb('DEM', '09*08*3000').then(function (data) {}).catch(function (error) {
             assert(error.errorCode === 700);
             done();
         });
