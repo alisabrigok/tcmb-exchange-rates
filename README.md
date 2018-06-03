@@ -1,5 +1,8 @@
 # CBRT EXCHANGE RATES FETCHER (TCMB DÖVİZ KURU KÜTÜPHANESİ)
 
+[![Build Status](https://travis-ci.org/alisabrigok/tcmb-exchange-rates.svg?branch=master)](https://travis-ci.org/alisabrigok/tcmb-exchange-rates)
+[![Coverage Status](https://coveralls.io/repos/github/alisabrigok/tcmb-exchange-rates/badge.svg?branch=master)](https://coveralls.io/github/alisabrigok/tcmb-exchange-rates?branch=master)
+
 Get exchange rates announced by the Central Bank of the Republic of Turkey (as known as CBRT or TCMB) easily with options:
 
   - Currency, 

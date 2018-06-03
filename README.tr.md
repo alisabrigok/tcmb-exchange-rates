@@ -1,5 +1,8 @@
 # CBRT EXCHANGE RATES FETCHER (TCMB DÖVİZ KURU KÜTÜPHANESİ)
 
+[![Build Status](https://travis-ci.org/alisabrigok/tcmb-exchange-rates.svg?branch=master)](https://travis-ci.org/alisabrigok/tcmb-exchange-rates)
+[![Coverage Status](https://coveralls.io/repos/github/alisabrigok/tcmb-exchange-rates/badge.svg?branch=master)](https://coveralls.io/github/alisabrigok/tcmb-exchange-rates?branch=master)
+
 Türkiye Cumhuriyeti Merkez Bankası (TCMB) tarafından yayınlanan döviz kurlarını kolayca;
 
   - Kur, 
