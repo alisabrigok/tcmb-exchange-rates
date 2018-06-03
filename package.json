@@ -1,0 +1,50 @@
+{
+  "name": "tcmb-exchange-rates",
+  "version": "0.1.0",
+  "description": "Get exchange rates announced by the Central Bank of the Republic of Turkey (as known as CBRT or TCMB) easily with currency, date, data type or encoding options.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alisabrigok/tcmb-exchange-rates.git"
+  },
+  "keywords": [
+    "tcmb",
+    "exchange",
+    "rate",
+    "currency",
+    "doviz",
+    "kuru",
+    "turkish",
+    "lira",
+    "turk",
+    "lirasi",
+    "cbrt",
+    "merkez",
+    "bankasi",
+    "central",
+    "bank",
+    "dollar",
+    "dolar",
+    "euro"
+  ],
+  "author": "Ali Sabri GÖK <alisabrigok@gmail.com> (http://www.alisabri.com)",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.0"
+  },
+  "bugs": {
+    "url": "https://github.com/alisabrigok/tcmb-exchange-rates/issues"
+  },
+  "homepage": "https://github.com/alisabrigok/tcmb-exchange-rates#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "iconv-lite": "^0.4.23",
+    "request": "^2.87.0",
+    "xml2js": "^0.4.19"
+  }
+}
