@@ -79,7 +79,7 @@ TCMB tarafından sağlanan API, veriyi XML olarak veriyor. Bu veriyi JSON'a çev
 
 ### Parametreler
 
-- ####kurKodu: String (3  Karakter Uzunluğunda), Null, Boş String.
+- #### kurKodu: String (3  Karakter Uzunluğunda), Null, Boş String.
 
 Kur kodu, opsiyonel olarak kullanılabilen ilk parametredir. Bu, o kurun veri türlerini içeren bir veri döner. Bu veri türlerinin değerlerinin çoğu o kurun Türk Lirası karşılığıdır.
 
@@ -112,7 +112,7 @@ Bu kod, Dolar ile alakalı döviz kuru veri türlerini bir obje içerisinde dön
 
 Eğer null ya da boş string argüman olarak kullanılmışsa ya da hiçbir parametre argüman olarak kullanılmamışsa, tıpkı fonksiyonu parametresiz çağırdığımızdaki gibi, tüm veri türleri ve bunların değerleri API'dan çekilir ve kur kodları 'key'leri altında gruplanmış şekilde bir obje olarak döner.
 
-- ####tarih: String ('GG.AA.YYYY', 'GG-AA-YYYY', 'GG/AA/YYYY'), String ('today'), Null, Boş String
+- #### tarih: String ('GG.AA.YYYY', 'GG-AA-YYYY', 'GG/AA/YYYY'), String ('today'), Null, Boş String
 
 Tarih, opsiyonel olarak kullanılabilen ikinci parametredir. Bu verilen tarihe dair olan verileri döner.
 
@@ -144,7 +144,7 @@ Bu kod, 10 Ağustos 2005 tarihine ait döviz kurlarının, çoğunluğu Euro'nun
 
 Eğer 'today' string'i, null ya da boş string argüman olarak kullanılmışsa ya da hiçbir parametre argüman olarak kullanılmamışsa, o anki bulunulan güne ait veriler API'dan çekilecektir.
 
-- ####veriTürü: String, Null, Empty String
+- #### veriTürü: String, Null, Empty String
 
 Veri türü, opsiyonel olarak kullanılabilen üçüncü parametredir. Bu verilen veri türüne ait tam bir değer ya da bir obje döner.
 
@@ -215,7 +215,7 @@ Encoding, opsiyonel olarak kullanılabilen dördüncü ve son parametredir. Bu, 
 
 Varsayılan olarak API'da kullanılan doğru encoding'i kullanmak için:
 
-**'ISO-8859-9' ** encoding türü '08.08.2016' tarihine kadar kullanılmış ve **'UTF-8'** encoding türü '08.08.2016' tarihinde ve sonrasında kullanılmıştır.
+**'ISO-8859-9'** encoding türü '08.08.2016' tarihine kadar kullanılmış ve **'UTF-8'** encoding türü '08.08.2016' tarihinde ve sonrasında kullanılmıştır.
 
 Bunun nedeni API'da kullanılan encoding türü yüzünden ortaya çıkan Türkçe karakter bozulmalarını düzeltmek içindir.
 
@@ -273,10 +273,10 @@ Tek başına yazılan hiçbir kod tam anlamıyla mükemmel değildir. Şuan belk
 
 Açıkcası yazarken baktım ki, başlangıçtaki basit bir kütüphane yazma fikrim geliştirmeye devam ettikçe daha da çok özellik sunabilmek amacıyla plansız bir şekilde büyümeye başlıyor, kodların kalitesizleşmemesi için bu plansızlığa dur deyip kütüphaneyi yayınlama kararı aldım. Proje daha da fazla temizlenip, büyütülebilir. Ama şimdilik bu kadar. Kullanıp beğendiysen ve işine yaradıysa teşekkürler.
 
-##Sonsöz
+## Sonsöz
 
 - Kedilerim Fındık ve Minnak'a teşekkürü bir borç bilirim. Sağolun çocuklar♥. 
 
-##Lisans
+## Lisans
 
-Bu proje MIT Lisansı ile lisanslanmıştır - detaylar için LICENSE.md dosyasına bir göz atın.
+Bu proje MIT Lisansı ile lisanslanmıştır - detaylar için [LICENSE.md](https://github.com/alisabrigok/tcmb-exchange-rates/blob/master/LICENSE) dosyasına bir göz atın.

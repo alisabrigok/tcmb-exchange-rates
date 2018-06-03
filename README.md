@@ -86,7 +86,7 @@ The API provided by CBRT returns the data as XML. Even when you convert it to JS
 
 ### Parameters
 
-- ####currencyCode: String (3  Char Long), Null, Empty String.
+- #### currencyCode: String (3  Char Long), Null, Empty String.
 
 The first parameter that is optionally can be passed as an argument is currency code. This will then return the data types related with that currency. Most of the data type values are Turkish Lira equivalent of that currency.
 
@@ -119,7 +119,7 @@ Will return all exchange rate data types related with Dollar in an object:
 
 If null, empty string or no parameters passed as an argument; all data types and their values under the keys of currency codes will be fetched from the API, just like invoking the function without any parameters.
 
-- ####date: String ('DD.MM.YYYY', 'DD-MM-YYYY', 'DD/MM/YYYY'), String ('today'), Null, Empty String
+- #### date: String ('DD.MM.YYYY', 'DD-MM-YYYY', 'DD/MM/YYYY'), String ('today'), Null, Empty String
 
 The second parameter that is optionally can be passed as an argument is date. This will then return the datas of that given date.
 
@@ -150,7 +150,7 @@ Will return all exchange rate data types, mostly Turkish Lira equivalent of Euro
 
 If string 'today', null, empty string or no parameters passed as an argument; the current day's datas will be fetched from the API.
 
-- ####dataType: String, Null, Empty String
+- #### dataType: String, Null, Empty String
 
 The third parameter that is optionally can be passed as an argument is data type. This will then return either the exact value or an object.
 
@@ -221,7 +221,7 @@ The forth and the last parameter that is optionally can be passed as an argument
 By default, in order to use the correct encoding that is used in the API:
 
 
-**'ISO-8859-9' **is used until the date of '08.08.2016' and **'UTF-8'** is used on '08.08.2016' and after.
+**'ISO-8859-9'** is used until the date of '08.08.2016' and **'UTF-8'** is used on '08.08.2016' and after.
 
 
 That is due to fix the problematic Turkish characters that's caused by the way the encoding in the API is used.
@@ -280,10 +280,10 @@ No code that is written single handed is perfect. This package's might not be ev
 
 Frankly, the idea of developing a simple package of mine was beginning to evolve something bigger in order to provide more features, and that was happenning without a proper plan. I decided to release the package in order to not to lose the quality of the code as soon as it hit me. The codes can be refactored more and the project can be enhanced with more features. But that's it for now. If you've used it and liked it, thank you.
 
-##Acknowledgments
+## Acknowledgments
 
 - I'd like to thank my cats; Fındık and Minnak. Thanks guys♥. 
+git 
+## License
 
-##License
-
-This project is licensed under the MIT License - see the LICENSE.md file for details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/alisabrigok/tcmb-exchange-rates/blob/master/LICENSE) file for details.
