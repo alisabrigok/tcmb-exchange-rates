@@ -4,7 +4,7 @@
   "description": "Get exchange rates announced by the Central Bank of the Republic of Turkey (as known as CBRT or TCMB) easily with currency, date, data type or encoding options.",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/.bin/mocha --reporter spec",
+    "test": "node ./node_modules/mocha/bin/mocha --reporter spec",
     "cover": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/*"
   },
   "repository": {

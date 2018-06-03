@@ -25,6 +25,27 @@ describe('using the tcmb function', function () {
         });
     });
 
+    it('should get an error with the error code of 700', function (done) {
+        tcmb('DEM', '09.08.1993').then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 700);
+            done();
+        });
+    });
+
+    it('should get an error with the error code of 700', function (done) {
+        tcmb('DEM', '09-08-3000').then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 700);
+            done();
+        });
+    });
+
+    it('should get an error with the error code of 701', function (done) {
+        tcmb(123, '09-08-1996').then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 701);
+            done();
+        });
+    });
+
     it('should get a number type value', function (done) {
         tcmb('DEM', '09/08/1996', 'BanknoteBuying').then(function (data) {
             assert(typeof data === 'number');
@@ -42,6 +63,20 @@ describe('using the tcmb function', function () {
     it('should get an error with the statusCode of 404 and errorCode of 703', function (done) {
         tcmb(null, '10.08.2008', 'BanknoteSelling').then(function (data) {}).catch(function (error) {
             assert(error.statusCode === 404 && error.errorCode === 703);
+            done();
+        });
+    });
+    
+    it('should get an error with the error code of 704', function (done) {
+        tcmb('', '09-08-1996', 'BanknoteSelling', 'ThisWontWork').then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 704);
+            done();
+        });
+    });
+    
+    it('should get an error with the error code of 707', function (done) {
+        tcmb('', '09-08-1996', 99).then(function (data) {}).catch(function (error) {
+            assert(error.errorCode === 707);
             done();
         });
     });
