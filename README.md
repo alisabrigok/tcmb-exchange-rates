@@ -283,7 +283,7 @@ Frankly, the idea of developing a simple package of mine was beginning to evolve
 ## Acknowledgments
 
 - I'd like to thank my cats; Fındık and Minnak. Thanks guys♥. 
-git 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/alisabrigok/tcmb-exchange-rates/blob/master/LICENSE) file for details.
