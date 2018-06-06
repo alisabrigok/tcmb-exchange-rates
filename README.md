@@ -2,6 +2,7 @@
 
 [![Build Status](https://travis-ci.org/alisabrigok/tcmb-exchange-rates.svg?branch=master)](https://travis-ci.org/alisabrigok/tcmb-exchange-rates)
 [![Coverage Status](https://coveralls.io/repos/github/alisabrigok/tcmb-exchange-rates/badge.svg?branch=master)](https://coveralls.io/github/alisabrigok/tcmb-exchange-rates?branch=master)
+[![Inline docs](http://inch-ci.org/github/alisabrigok/tcmb-exchange-rates.svg?branch=master)](http://inch-ci.org/github/alisabrigok/tcmb-exchange-rates)
 
 Get exchange rates announced by the Central Bank of the Republic of Turkey (as known as CBRT or TCMB) easily with options:
 
@@ -89,7 +90,7 @@ The API provided by CBRT returns the data as XML. Even when you convert it to JS
 
 ### Parameters
 
-- **currencyCode**: String (3  Char Long), Null, Empty String.
+- **currencyCode: String (3  Char Long), Null, Empty String**
 
 The first parameter that is optionally can be passed as an argument is currency code. This will then return the data types related with that currency. Most of the data type values are Turkish Lira equivalent of that currency.
 
@@ -122,7 +123,7 @@ Will return all exchange rate data types related with Dollar in an object:
 
 If null, empty string or no parameters passed as an argument; all data types and their values under the keys of currency codes will be fetched from the API, just like invoking the function without any parameters.
 
-- **date**: String ('DD.MM.YYYY', 'DD-MM-YYYY', 'DD/MM/YYYY'), String ('today'), Null, Empty String
+- **date: String ('DD.MM.YYYY', 'DD-MM-YYYY', 'DD/MM/YYYY'), String ('today'), Null, Empty String**
 
 The second parameter that is optionally can be passed as an argument is date. This will then return the datas of that given date.
 
@@ -153,7 +154,7 @@ Will return all exchange rate data types, mostly Turkish Lira equivalent of Euro
 
 If string 'today', null, empty string or no parameters passed as an argument; the current day's datas will be fetched from the API.
 
-- **dataType**: String, Null, Empty String
+- **dataType: String, Null, Empty String**
 
 The third parameter that is optionally can be passed as an argument is data type. This will then return either the exact value or an object.
 
@@ -217,7 +218,7 @@ Will return Forex buying values of Turkish Lira equivalent of all foreign curren
 
 If null, empty string or no parameters passed as an argument; this part will have no effect on the data being fetched.
 
-- **encoding**:  String, Null, Empty String
+- **encoding:  String, Null, Empty String**
 
 The forth and the last parameter that is optionally can be passed as an argument is encoding. This will then return the data using the provided encoding.
 
