@@ -1,6 +1,6 @@
 {
   "name": "tcmb-exchange-rates",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Get exchange rates announced by the Central Bank of the Republic of Turkey (as known as CBRT or TCMB) easily with currency, date, data type or encoding options.",
   "main": "index.js",
   "scripts": {
