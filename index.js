@@ -84,8 +84,10 @@ function dateParser(date) {
  * @returns {string}
  */
 function getEncoding(date) {
-    var firstUtfDate = ['08', '08', '2016'];
-    if ((date[0] >= firstUtfDate[0]) && (date[1] >= firstUtfDate[1]) && (date[2] >= firstUtfDate[2])) return 'UTF-8';
+    var firstUtfDate = new Date('2016', '08', '08');
+    // new Date() expects the date in fomat of YYYY, MM, DD...
+    var currentDate = new Date(date[2], date[1], date[0]);
+    if (currentDate >= firstUtfDate) return 'UTF-8';
     return 'ISO-8859-9';
 }
 
