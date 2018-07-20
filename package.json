@@ -2,10 +2,13 @@
   "name": "tcmb-exchange-rates",
   "version": "0.1.4",
   "description": "Get exchange rates announced by the Central Bank of the Republic of Turkey (as known as CBRT or TCMB) easily with currency, date, data type or encoding options.",
-  "main": "index.js",
+  "main": ".lib/index.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha --reporter spec",
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/*"
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "compile": "babel --source-maps -d lib/ src/",
+    "minify": "uglifyjs lib/index.js --compress -b beautify=false,preamble='\"// tcmb-exchange-rates, MIT, https://github.com/alisabrigok/tcmb-exchange-rates, by Ali Sabri GÖK <alisabrigok@gmail.com> (http://www.alisabri.com)\"'  --source-map lib/index.min.js.map --in-source-map lib/index.js.map --mangle -o lib/index.min.js",
+    "prepare": "npm run compile && npm run minify"
   },
   "repository": {
     "type": "git",
@@ -41,6 +44,8 @@
   },
   "homepage": "https://github.com/alisabrigok/tcmb-exchange-rates#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
     "coveralls": "^3.0.1",
     "istanbul": "^0.4.5",
     "mocha": "^5.2.0"
